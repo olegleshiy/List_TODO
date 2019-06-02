@@ -1,4 +1,4 @@
-@import '../../theme/breakpoints';
+@import '../../theme/breakpoints.css';
 
 .task {
     position: relative;
@@ -49,6 +49,10 @@
         & .toggleTaskFavoriteState,
         & .updateTaskMessageOnClick {
             margin-right: 20px;
+
+        }
+        & div {
+            display: inline-block;
         }
     }
 

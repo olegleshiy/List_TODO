@@ -1,8 +1,13 @@
 // Core
 import React, { PureComponent } from 'react';
 
+//Components
+import Content from "../Content";
+import Actions from "../Actions";
+
 // Instruments
 import Styles from './styles.m.css';
+
 
 export default class Task extends PureComponent {
     _getTaskShape = ({
@@ -18,6 +23,11 @@ export default class Task extends PureComponent {
     });
 
     render () {
-        return <li className = { Styles.task }>Задача: стартовая точка</li>;
+        return (
+            <li className = { Styles.task }>
+                <Content/>
+                <Actions/>
+            </li>
+        )
     }
 }
